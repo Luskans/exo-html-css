@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+p {
+    font-size: 1.5em;
+    text-align: justify;
+    margin-top: 50px;
+}
+
+main a {
+    font-size: 4em;
+}
+
+header a, footer a {
+    font-size: 1.8em;
+}
+
+li {
+    margin-right: 30px;
+}
+
+header, footer {
+    background-color: rgb(178, 178, 178);
+    padding: 20px;
+    display: flex;
+}
+
+header nav ul, footer .partnerWebsites ul {
+    display: flex;
+    margin: auto;
+}
+
+main {
+    padding: 20px;
+}
+
+.mainArticle, .subArticles, .personnalInfos, .partnerWebsites, h1, nav {
+    width: 50%;
+}

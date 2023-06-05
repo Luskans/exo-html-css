@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    height: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    vertical-align: auto;
+    margin: 0 10px 0 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* ____________ HEADER _____________ */
+
+header {
+    height: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: gray;
+}
+
+/* ____________ SECTION _____________ */
+
+main {
+    display: flex;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section {
+    width: 70%;
+    padding: 10px;
+}
+
+.container1 {
+    display: flex;
+}
+
+.container1--image {
+    max-width: 30%;
+}
+
+main img {
+    width: 100%;
+}
+
+.container2 p {
+    text-align: justify;
+}
+
+.container2--link {
+    text-align: right;
+}
+
+.container2--link a {
+    text-align: right;
+    color: red;
+    text-decoration: none;
+}
+
+.container2--link a:hover {
+    text-decoration: underline;
+}
+
+/* ____________ ASIDE _____________ */
+
+article {
+    width: 30%;
+    background-color: lightgray;
+    padding: 10px;
+    margin-top: 20px; 
+    border-radius: 30px;
+}
+
+/*.subArticles ul {
+    text-align: right;
+}*/
+
+article li {
+    text-align: right;
+    margin: 5px;
+    list-style-type: none;
+}
+
+article a {
+    color: black;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* ____________ FOOTER _____________ */
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    /*padding: 10px 20px 10px 0px;*/
+    box-shadow: 0 -5px 8px black;
+}
+
+.personnalInfos, .partnerWebsites {
+    padding: 10PX 20px 10px 20px ;
+}
+
+.personnalInfos {
+    text-align: right;
+}
+
+footer a {
+    color: lightgrey;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
