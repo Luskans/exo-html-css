@@ -1,6 +1,6 @@
 /* ====================================
-   CSS setup ï¿½ï¿½ne rien modifier
-   ï¿½diter plus bas
+   CSS setup – ne rien modifier
+   éditer plus bas
  * ==================================== */
 
 body { margin: 0; padding: 0; border: 0; }
@@ -14,35 +14,6 @@ li:nth-of-type(5n) { background-color: #e74c3c; }
 a { color: white; font-size: 16px; line-height: 50px; text-decoration: none; }
 
 /* ====================================
-   ï¿½diter ï¿½ partir d'ici
+   éditer à partir d'ici
  * ==================================== */
 
-ul {
-  display: flex;
-  align-items: center;
-}
-
-li {
-  width: 20%;
-  display: flex;
-}
-
-a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-li:hover {
-  align-self: normal;
-}
-
-@media screen and (max-width: 600px) {
-  ul {
-    flex-direction: column;
-  }
-
-  li:hover {
-    align-self: auto;
-  }
-}
