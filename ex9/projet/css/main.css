@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    height: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    vertical-align: auto;
+    margin: 0 10px 0 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+/* ____________ HEADER _____________ */
+
+header {
+    height: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+nav ul li a:hover {
+    background-color: gray;
+}
+
+/* ____________ SECTION _____________ */
+
+main {
+    display: flex;
+    min-height: 100%;
+    position: relative;
+    padding: 10px;
+}
+
+section {
+    width: 70%;
+    /*padding: 10px;*/
+}
+
+.container1 {
+    display: flex;
+}
+
+.container1--image {
+    max-width: 30%;
+}
+
+main img {
+    width: 100%;
+}
+
+.container2 p {
+    text-align: justify;
+}
+
+.container2--link {
+    text-align: right;
+}
+
+.container2--link a {
+    text-align: right;
+    color: red;
+    text-decoration: none;
+}
+
+.container2--link a:hover {
+    text-decoration: underline;
+}
+
+/* ____________ ASIDE _____________ */
+
+article {
+    width: 30%;
+    background-color: lightgray;
+    padding: 10px;
+    margin-top: 20px; 
+    border-radius: 30px;
+}
+
+/*.subArticles ul {
+    text-align: right;
+}*/
+
+article li {
+    text-align: right;
+    margin: 5px;
+    list-style-type: none;
+}
+
+article a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+article a:hover {
+    color: red;
+}
+
+/* ____________ FOOTER _____________ */
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: static;
+    bottom: 0;
+    height: 90px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    /*padding: 10px 20px 10px 0px;*/
+    box-shadow: 0 -5px 8px black;
+}
+
+.personnalInfos, .partnerWebsites {
+    padding: 10PX 20px 10px 20px ;
+}
+
+.personnalInfos {
+    text-align: right;
+}
+
+footer a {
+    color: lightgrey;
+    text-decoration: none;
+    transition: font-size 0.5s;
+}
+
+footer a:hover {
+    font-size: 1.2em;
+}
+
+/* ____________ ANIMATIONS _____________ */
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+header, footer {
+    opacity: 0;
+    animation: fade 1s 0.5s forwards;
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(-100%);
+    } to {
+        transform: translateX(0);
+    }
+}
+
+section {
+    animation: slide-right 1s 0.5s forwards;
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(100%);
+    } to {
+        transform: translateX(0);
+    }
+}
+
+article {
+    animation: slide-left 1s 0.5s forwards;
+}
+
+@keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(10px);
+    }
+    75% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+  
+.container2--link a {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+  
+.container2--link a:hover {
+    animation: shake 0.5s; /* Durée de l'animation de secousse */
+    animation-fill-mode: forwards; /* Maintient l'état final de l'animation */
+}
+
+@keyframes color {
+    0% {
+      color: red;
+    }
+    50% {
+      color: blue;
+    }
+    100% {
+      color: yellow;
+    }
+}
+  
+.partnerWebsites h3 {
+    animation: color linear 1s infinite 0.5s;
+}
+
+/*/////////////////////////////////////////
+////////////// ANIMATIONS ////////////////
+////////////////////////////////////////*/
+
+@media (max-width: 768px) {
+
+    /*main, section, .container1, .container1--image, article {
+        border: 1px solid green;
+    }*/
+
+    nav a, section p, article a {
+      font-size: 1.2em;
+    }
+
+    main {
+        display: block;
+    }
+
+    section, article {
+        width: 100%;
+    }
+
+    .container1 {
+        width: 100%;
+    }
+
+    .container1--image, .container2 {
+        width: 50%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 630px) {
+    nav {
+        display: none;
+    }
+
+    .container1 {
+        display: block;
+    }
+
+    .container1--image, .container2 {
+        width: 100%;
+        max-width: 100%;
+    }
+}

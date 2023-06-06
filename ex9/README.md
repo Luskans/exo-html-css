@@ -36,7 +36,7 @@ Pour vous aider vous pouvez consulter la documentation de [Facebook](https://dev
 Exercice : Suivez les règles et ajoutez les metadonnées pour les réseaux sociaux
 
 3. Mise en place des bonnes pratiques
-Afin d'amméliorer le référencement nous allons suivre un enssemble de bonne pratique sur le site, principalement concernant les images et les liens :
+Afin d'amméliorer le référencement nous allons suivre un ensemble de bonne pratique sur le site, principalement concernant les images et les liens :
 
 * Empecher les moteurs de recherche de suivre les liens présents dans le footer (nofollow)
 * Mise en place de la description alternatives sur l'image de l'article (alt)
